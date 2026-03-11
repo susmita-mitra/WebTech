@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title>
+
+<script src="script/script.js"></script>
+
+</head>
+
+<body>
+
+<h3>Event Registration</h3>
+
+<form onsubmit="return collectData();">
+
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your Name">
+<p id="nameerror" style="color:red"></p>
+
+<br>
+
+<label>Professional Email</label>
+<input type="text" id="email" placeholder="Enter your email">
+<p id="emailerror" style="color:red"></p>
+
+<br>
+
+<label>Company</label>
+<input type="text" id="company">
+<p id="companyerror" style="color:red"></p>
+
+<br>
+
+<fieldset>
+
+<legend>Attendance Type</legend>
+
+<label for="virtual">Virtual</label>
+<input type="radio" name="attendance" id="virtual" value="Virtual">
+
+<label for="person">In-Person</label>
+<input type="radio" name="attendance" id="person" value="InPerson">
+
+<p id="attendanceerror" style="color:red"></p>
+
+</fieldset>
+
+<br>
+
+<button type="submit">Register</button>
+
+</form>
+
+<button type="button" id="analyticsBtn" onclick="dynamic()">
+Show Event Analytics
+</button>
+
+<div id="analyticsPanel" hidden>
+
+<p>Total Registrants: <span id="total">0</span></p>
+<p>Virtual: <span id="virtualCount">0</span></p>
+<p>In-Person: <span id="personCount">0</span></p>
+
+</div>
+
+</body>
+</html>
