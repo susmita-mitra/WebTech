@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./script/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+</head>
+<body>
+    <h1>Text Analyzer</h1>
+ 
+    <textarea id="textInput" rows="8" cols="70" placeholder="Enter text here"></textarea>
+    <br>
+    <br>
+ 
+    <button onclick="analyzeText()">Analyze Text</button>
+ 
+    <p id="errorMsg" style="color:red;"></p>
+ 
+    <h3>Result:</h3>
+    <p>Characters: <span id="charCount"></span></p>
+    <p>Words: <span id="wordCount"></span></p>
+    <p>Reversed Text: <span id="reversedText"></span></p>
+</body>
+</html>
